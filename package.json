@@ -83,7 +83,7 @@
     "make-dir": "^3.1.0",
     "multimatch": "^4.0.0",
     "normalize-newline": "^3.0.0",
-    "open": "^7.0.4",
+    "open": "^7.3.0",
     "ora": "^4.0.4",
     "read-pkg-up": "^7.0.1",
     "recursive-readdir": "^2.2.2",
