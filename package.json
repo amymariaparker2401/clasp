@@ -7,7 +7,7 @@
     "build": "npm run compile && npm i -g --loglevel=error",
     "build-fresh": "npm cache clean --force && npm i && npm run build",
     "watch": "tsc --project tsconfig.json --watch",
-    "prepare": "npm run compile",
+    "prepare": "npm run snyk-protect && npm run compile",
     "publish": "npm publish --access public",
     "lint": "npm run check",
     "test": "nyc mocha --cache false --timeout 100000 build/test",
@@ -17,7 +17,8 @@
     "clean": "gts clean",
     "compile": "tsc",
     "fix": "gts fix src/*.ts src/**/*.ts test/*.ts test/**/*.ts",
-    "pretest": "npm run compile && npm run check"
+    "pretest": "npm run compile && npm run check",
+    "snyk-protect": "snyk-protect"
   },
   "engines": {
     "node": ">= 10.3.0"
@@ -91,7 +92,8 @@
     "strip-bom": "^4.0.0",
     "ts2gas": "^3.6.3",
     "typescript": "^3.9.6",
-    "watch": "^1.0.2"
+    "watch": "^1.0.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/chai": "^4.2.11",
@@ -110,5 +112,6 @@
     "prettier": "^2.0.4",
     "tmp": "^0.2.1",
     "type-fest": "^0.16.0"
-  }
+  },
+  "snyk": true
 }
