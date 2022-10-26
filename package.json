@@ -86,7 +86,7 @@
     "open": "^7.0.4",
     "ora": "^4.0.4",
     "read-pkg-up": "^7.0.1",
-    "recursive-readdir": "^2.2.2",
+    "recursive-readdir": "^2.2.3",
     "split-lines": "^2.0.0",
     "strip-bom": "^4.0.0",
     "ts2gas": "^3.6.3",
